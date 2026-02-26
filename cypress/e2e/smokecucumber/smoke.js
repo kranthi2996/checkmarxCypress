@@ -165,6 +165,7 @@ cy.get(".react-calendar__navigation__label").click();
 cy.contains('button',year).click()
 cy.get('.react-calendar__year-view__months__month').eq(Number(month)-1).click()
 cy.contains('button',day).click()
+cy.screenshot();
 
 //asser
 cy.get('.react-date-picker__inputGroup__input').each(($el,index)=>{
